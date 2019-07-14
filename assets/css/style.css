@@ -639,12 +639,12 @@ a {
   width: 130px;
   height: 130px;
   overflow: hidden;
+  z-index: 30;
 }
 .wave {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
 }
 .wave::before, .wave::after {
   content: "";
