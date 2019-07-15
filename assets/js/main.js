@@ -15,29 +15,7 @@
         cursorChar: '|',
         autoInsertCss: true
     });
-		
-	/*-- circle progress activate --*/
-		// CircleProg('.65','#00B9E4',$('#circle-1'));
-		// CircleProg('.75','#DF457E',$('#circle-2'));
-		// CircleProg('.85','#2FD4BE',$('#circle-3'));
-		// CircleProg('.95','#F28055',$('#circle-4'));
-		
-		
-	/*--- function for Circle progreass var activation ---*/
-		// function CircleProg(val,color,selector){
-		// 	selector.append('<span>'+val.substr(1)+' % </span>');
-		// 	selector.circleProgress({
-		// 		value: val,
-		// 		size: 150,
-		// 		fill: {
-		// 		  color: color
-		// 		},
-		// 		 thickness:10,
-		// 		 lineCap:'round',
-		// 		 emptyFill:"#ddd"
-		// 	  });
-		// }
-		
+
 		/*---- portfolio masonay activation with image load  ------*/
             var Container =$('.container'); 
                 Container.imagesLoaded( function() {
@@ -164,4 +142,12 @@
 		
     });
 
-}(jQuery));	
+    // 微信公众号点击事件
+    $("#wx").click( function () {
+        if ($("#weixin").is(':hidden')){
+            $("#weixin").slideDown("slow");
+        }else {
+            $("#weixin").slideUp("slow");
+        }
+    });
+}(jQuery));
