@@ -150,4 +150,13 @@
             $("#weixin").slideUp("slow");
         }
     });
+    // egg
+    $(".egg").click( function () {
+        $(".footer-area").animate({
+            height: '700px'
+        },3000)
+        $("html,body").animate({
+            scrollTop: 19999
+        }, 3000);
+    });
 }(jQuery));
